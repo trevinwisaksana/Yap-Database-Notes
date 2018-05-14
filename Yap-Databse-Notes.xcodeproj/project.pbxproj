@@ -7,12 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F5671CFF9543DD245F541FA /* Pods_Yap_Databse_NotesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64380297FA09936FE6A4CAA3 /* Pods_Yap_Databse_NotesTests.framework */; };
+		95BDDEE0D68BCD611011A05E /* Pods_Yap_Databse_Notes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24508ACE91233599BEF72233 /* Pods_Yap_Databse_Notes.framework */; };
 		DD78EC26209C3F1A008884CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD78EC25209C3F1A008884CA /* AppDelegate.swift */; };
-		DD78EC28209C3F1B008884CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD78EC27209C3F1B008884CA /* ViewController.swift */; };
 		DD78EC2B209C3F1B008884CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD78EC29209C3F1B008884CA /* Main.storyboard */; };
 		DD78EC2D209C3F1E008884CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD78EC2C209C3F1E008884CA /* Assets.xcassets */; };
 		DD78EC30209C3F1E008884CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD78EC2E209C3F1E008884CA /* LaunchScreen.storyboard */; };
 		DD78EC3B209C3F1E008884CA /* Yap_Databse_NotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD78EC3A209C3F1E008884CA /* Yap_Databse_NotesTests.swift */; };
+		DD78EC46209C3FE5008884CA /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD78EC45209C3FE5008884CA /* NotesViewController.swift */; };
+		DD78EC48209C4053008884CA /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD78EC47209C4053008884CA /* NoteCell.swift */; };
+		DD78EC4A209C40EF008884CA /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD78EC49209C40EF008884CA /* NoteViewModel.swift */; };
+		DD78EC4E209C4116008884CA /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD78EC4D209C4116008884CA /* Note.swift */; };
+		DD78EC53209C4217008884CA /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD78EC52209C4217008884CA /* DatabaseService.swift */; };
+		DD78EC55209C5A83008884CA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD78EC54209C5A83008884CA /* Constants.swift */; };
+		DD78EC5D209C5E45008884CA /* UITableView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD78EC5C209C5E44008884CA /* UITableView+Utility.swift */; };
+		DD78EC60209C639B008884CA /* CreateNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD78EC5F209C639B008884CA /* CreateNoteViewController.swift */; };
+		DD78EC62209C67EC008884CA /* CreateNoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD78EC61209C67EC008884CA /* CreateNoteViewModel.swift */; };
+		DD9C4EAE20A828DE004BD900 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9C4EAD20A828DE004BD900 /* SearchService.swift */; };
+		DD9C4EB020A9636B004BD900 /* Date+convertToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9C4EAF20A9636B004BD900 /* Date+convertToString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DB8DE421FDA50871F662B06 /* Pods-Yap-Databse-Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yap-Databse-Notes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yap-Databse-Notes/Pods-Yap-Databse-Notes.release.xcconfig"; sourceTree = "<group>"; };
+		24508ACE91233599BEF72233 /* Pods_Yap_Databse_Notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yap_Databse_Notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5688459256BD7752013F6EAB /* Pods-Yap-Databse-NotesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yap-Databse-NotesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yap-Databse-NotesTests/Pods-Yap-Databse-NotesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		64380297FA09936FE6A4CAA3 /* Pods_Yap_Databse_NotesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yap_Databse_NotesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3133DDFC384C9F7C26B0107 /* Pods-Yap-Databse-NotesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yap-Databse-NotesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yap-Databse-NotesTests/Pods-Yap-Databse-NotesTests.release.xcconfig"; sourceTree = "<group>"; };
+		B4A07994897B6D2A89EB7593 /* Pods-Yap-Databse-Notes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yap-Databse-Notes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yap-Databse-Notes/Pods-Yap-Databse-Notes.debug.xcconfig"; sourceTree = "<group>"; };
 		DD78EC22209C3F1A008884CA /* Yap-Databse-Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yap-Databse-Notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD78EC25209C3F1A008884CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD78EC27209C3F1B008884CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD78EC2A209C3F1B008884CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD78EC2C209C3F1E008884CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD78EC2F209C3F1E008884CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +53,18 @@
 		DD78EC36209C3F1E008884CA /* Yap-Databse-NotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yap-Databse-NotesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD78EC3A209C3F1E008884CA /* Yap_Databse_NotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yap_Databse_NotesTests.swift; sourceTree = "<group>"; };
 		DD78EC3C209C3F1E008884CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD78EC45209C3FE5008884CA /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		DD78EC47209C4053008884CA /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		DD78EC49209C40EF008884CA /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
+		DD78EC4D209C4116008884CA /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		DD78EC4F209C41C3008884CA /* Yap-Databse-Notes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yap-Databse-Notes-Bridging-Header.h"; sourceTree = "<group>"; };
+		DD78EC52209C4217008884CA /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		DD78EC54209C5A83008884CA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DD78EC5C209C5E44008884CA /* UITableView+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Utility.swift"; sourceTree = "<group>"; };
+		DD78EC5F209C639B008884CA /* CreateNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteViewController.swift; sourceTree = "<group>"; };
+		DD78EC61209C67EC008884CA /* CreateNoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteViewModel.swift; sourceTree = "<group>"; };
+		DD9C4EAD20A828DE004BD900 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		DD9C4EAF20A9636B004BD900 /* Date+convertToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+convertToString.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95BDDEE0D68BCD611011A05E /* Pods_Yap_Databse_Notes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +80,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F5671CFF9543DD245F541FA /* Pods_Yap_Databse_NotesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05890C78AF86C2DAD5E24034 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4A07994897B6D2A89EB7593 /* Pods-Yap-Databse-Notes.debug.xcconfig */,
+				1DB8DE421FDA50871F662B06 /* Pods-Yap-Databse-Notes.release.xcconfig */,
+				5688459256BD7752013F6EAB /* Pods-Yap-Databse-NotesTests.debug.xcconfig */,
+				B3133DDFC384C9F7C26B0107 /* Pods-Yap-Databse-NotesTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		221260648DAFB6A14803BEA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24508ACE91233599BEF72233 /* Pods_Yap_Databse_Notes.framework */,
+				64380297FA09936FE6A4CAA3 /* Pods_Yap_Databse_NotesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DD78EC19209C3F1A008884CA = {
 			isa = PBXGroup;
 			children = (
 				DD78EC24209C3F1A008884CA /* Yap-Databse-Notes */,
 				DD78EC39209C3F1E008884CA /* Yap-Databse-NotesTests */,
 				DD78EC23209C3F1A008884CA /* Products */,
+				05890C78AF86C2DAD5E24034 /* Pods */,
+				221260648DAFB6A14803BEA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,11 +131,18 @@
 			isa = PBXGroup;
 			children = (
 				DD78EC25209C3F1A008884CA /* AppDelegate.swift */,
-				DD78EC27209C3F1B008884CA /* ViewController.swift */,
+				DD78EC58209C5D76008884CA /* View Controllers */,
+				DD78EC59209C5D80008884CA /* View Model */,
+				DD78EC5A209C5D87008884CA /* Models */,
+				DD78EC57209C5CED008884CA /* Services */,
+				DD78EC56209C5CE2008884CA /* Helpers */,
+				DD78EC5B209C5D94008884CA /* Views */,
+				DD78EC5E209C5E49008884CA /* Extensions */,
 				DD78EC29209C3F1B008884CA /* Main.storyboard */,
 				DD78EC2C209C3F1E008884CA /* Assets.xcassets */,
 				DD78EC2E209C3F1E008884CA /* LaunchScreen.storyboard */,
 				DD78EC31209C3F1E008884CA /* Info.plist */,
+				DD78EC4F209C41C3008884CA /* Yap-Databse-Notes-Bridging-Header.h */,
 			);
 			path = "Yap-Databse-Notes";
 			sourceTree = "<group>";
@@ -96,6 +156,66 @@
 			path = "Yap-Databse-NotesTests";
 			sourceTree = "<group>";
 		};
+		DD78EC56209C5CE2008884CA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DD78EC54209C5A83008884CA /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DD78EC57209C5CED008884CA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DD78EC52209C4217008884CA /* DatabaseService.swift */,
+				DD9C4EAD20A828DE004BD900 /* SearchService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DD78EC58209C5D76008884CA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD78EC45209C3FE5008884CA /* NotesViewController.swift */,
+				DD78EC5F209C639B008884CA /* CreateNoteViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DD78EC59209C5D80008884CA /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD78EC49209C40EF008884CA /* NoteViewModel.swift */,
+				DD78EC61209C67EC008884CA /* CreateNoteViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		DD78EC5A209C5D87008884CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD78EC4D209C4116008884CA /* Note.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD78EC5B209C5D94008884CA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD78EC47209C4053008884CA /* NoteCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DD78EC5E209C5E49008884CA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DD9C4EAF20A9636B004BD900 /* Date+convertToString.swift */,
+				DD78EC5C209C5E44008884CA /* UITableView+Utility.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +223,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD78EC3F209C3F1E008884CA /* Build configuration list for PBXNativeTarget "Yap-Databse-Notes" */;
 			buildPhases = (
+				C340A94E98E802DA4CB7C346 /* [CP] Check Pods Manifest.lock */,
 				DD78EC1E209C3F1A008884CA /* Sources */,
 				DD78EC1F209C3F1A008884CA /* Frameworks */,
 				DD78EC20209C3F1A008884CA /* Resources */,
+				389AFE1A99E503D375666BD7 /* [CP] Embed Pods Frameworks */,
+				01CE75253E04B16A8A75B566 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +243,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD78EC42209C3F1E008884CA /* Build configuration list for PBXNativeTarget "Yap-Databse-NotesTests" */;
 			buildPhases = (
+				2BD712755E21A673BCFD70B5 /* [CP] Check Pods Manifest.lock */,
 				DD78EC32209C3F1E008884CA /* Sources */,
 				DD78EC33209C3F1E008884CA /* Frameworks */,
 				DD78EC34209C3F1E008884CA /* Resources */,
+				B502BB431FC7A8824CE154A1 /* [CP] Embed Pods Frameworks */,
+				9B6EF9692FF7F46BFB8DA240 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,6 +272,7 @@
 				TargetAttributes = {
 					DD78EC21209C3F1A008884CA = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					DD78EC35209C3F1E008884CA = {
 						CreatedOnToolsVersion = 9.3;
@@ -192,12 +319,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01CE75253E04B16A8A75B566 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yap-Databse-Notes/Pods-Yap-Databse-Notes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BD712755E21A673BCFD70B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		389AFE1A99E503D375666BD7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yap-Databse-Notes/Pods-Yap-Databse-Notes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B6EF9692FF7F46BFB8DA240 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yap-Databse-NotesTests/Pods-Yap-Databse-NotesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B502BB431FC7A8824CE154A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yap-Databse-NotesTests/Pods-Yap-Databse-NotesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C340A94E98E802DA4CB7C346 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD78EC1E209C3F1A008884CA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD78EC28209C3F1B008884CA /* ViewController.swift in Sources */,
+				DD78EC62209C67EC008884CA /* CreateNoteViewModel.swift in Sources */,
+				DD78EC53209C4217008884CA /* DatabaseService.swift in Sources */,
+				DD78EC4E209C4116008884CA /* Note.swift in Sources */,
+				DD9C4EAE20A828DE004BD900 /* SearchService.swift in Sources */,
+				DD78EC4A209C40EF008884CA /* NoteViewModel.swift in Sources */,
+				DD78EC48209C4053008884CA /* NoteCell.swift in Sources */,
+				DD78EC60209C639B008884CA /* CreateNoteViewController.swift in Sources */,
+				DD78EC5D209C5E45008884CA /* UITableView+Utility.swift in Sources */,
+				DD78EC55209C5A83008884CA /* Constants.swift in Sources */,
+				DD9C4EB020A9636B004BD900 /* Date+convertToString.swift in Sources */,
+				DD78EC46209C3FE5008884CA /* NotesViewController.swift in Sources */,
 				DD78EC26209C3F1A008884CA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,9 +586,12 @@
 		};
 		DD78EC40209C3F1E008884CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4A07994897B6D2A89EB7593 /* Pods-Yap-Databse-Notes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6XBYN74RRN;
 				INFOPLIST_FILE = "Yap-Databse-Notes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -366,6 +599,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.trevinwisaksana.Yap-Databse-Notes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Yap-Databse-Notes/Yap-Databse-Notes-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -373,9 +608,12 @@
 		};
 		DD78EC41209C3F1E008884CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DB8DE421FDA50871F662B06 /* Pods-Yap-Databse-Notes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6XBYN74RRN;
 				INFOPLIST_FILE = "Yap-Databse-Notes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -383,6 +621,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.trevinwisaksana.Yap-Databse-Notes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Yap-Databse-Notes/Yap-Databse-Notes-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -390,6 +629,7 @@
 		};
 		DD78EC43209C3F1E008884CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5688459256BD7752013F6EAB /* Pods-Yap-Databse-NotesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -410,6 +650,7 @@
 		};
 		DD78EC44209C3F1E008884CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3133DDFC384C9F7C26B0107 /* Pods-Yap-Databse-NotesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

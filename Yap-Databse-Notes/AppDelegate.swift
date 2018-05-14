@@ -8,6 +8,8 @@
 
 import UIKit
 
+let database = YapDatabase(path: Constants.Database.path)
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
